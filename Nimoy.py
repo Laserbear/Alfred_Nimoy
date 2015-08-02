@@ -16,6 +16,13 @@ def trigger_response(trigger): #selects random response corresponding to trigger
   pass
   
 def teachable(data): #determines whether a trigger response can be learned
+  if "is" in data:
+    if not data.startswith("is"):
+     learn(data.split("is")[0], data.split(":")[2])
+  else:
+    return 0
+
+def learn(trigger, response):
   pass
 
 notfoundresponses = ["I dunno, m8", "Looks around nervously"]
