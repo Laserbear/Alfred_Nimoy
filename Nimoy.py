@@ -17,7 +17,8 @@ def trigger_response(trigger): #selects random response corresponding to trigger
   
 def teachable(data): #determines whether a trigger response can be learned
   pass
-  
+
+notfoundresponses = ["I dunno, m8", "Looks around nervously"]
 replied = 0
 while 1:
    replied = 0
@@ -33,5 +34,5 @@ while 1:
   if databasecheck(data)[0] == 1 and not teachable(data):
     sock.send("PRIVMSG " + chan + " :databasecheck(data)[1]\r\n")
   else:
-    sock.send("PRIVMSG " + chan + " :notfoundresponses[randint(1,len(notfoundresponses)] + "\r\n")
+    sock.send("PRIVMSG " + chan + " :notfoundresponses[randint(1,len(notfoundresponses)] + "\r\n") 
     
