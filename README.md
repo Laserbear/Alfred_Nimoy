@@ -1,2 +1,3 @@
 # Alfred_Nimoy
-irc chat boy
+irc chat bot
+
