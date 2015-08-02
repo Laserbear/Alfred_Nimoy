@@ -1,4 +1,5 @@
 import socket
+import pymongo
 
 #connection details
 bot_owner = "Laserbear"
