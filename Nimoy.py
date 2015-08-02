@@ -32,4 +32,6 @@ while 1:
       sock.send("JOIN " + chan + "\r\n")
   if databasecheck(data)[0] == 1 and not teachable(data):
     sock.send("PRIVMSG " + chan + " :databasecheck(data)[1]\r\n")
+  else:
+    sock.send("PRIVMSG " + chan + " :notfoundresponses[randint(1,len(notfoundresponses)] + "\r\n")
     
