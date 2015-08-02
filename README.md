@@ -4,8 +4,12 @@ Alfred Nimoy is an IRC bot capable of learning associations based on conversatio
 
 Teaching Alfred:
 Alfred learns by identifying phrases that people associate with one another.
-i.e. Pillows are soft =>
-Trigger: Pillows
+
+
+i.e. Pillows are soft 
+
+
+Trigger: Pillows =>
 Yields: Pillows are soft
 
 -------
