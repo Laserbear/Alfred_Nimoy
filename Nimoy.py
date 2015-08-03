@@ -24,7 +24,7 @@ def teachable(data): #determines whether a trigger response can be learned
     return 0
 
 def learn(trigger, response):
-  pass
+  nimoydb.learn(trigger, response)
 
 notfoundresponses = ["I dunno, m8", "Looks around nervously"]
 replied = 0
