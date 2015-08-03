@@ -11,3 +11,12 @@ def learn(trigger, response): #add association
   data['trigger'] = trigger
   data['response'] = response #find way to add new responses
   brain.insert(data)
+  
+  
+  
+'''
+Database should have three values for each entry
+1. Trigger string
+2. Response
+3. Times triggered
+'''
