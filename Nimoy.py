@@ -11,7 +11,8 @@ sock.send("USER " + nick + " 0 * :" + bot_owner + "\r\n")
 sock.send("NICK " + nick + "\r\n")
 
 def databasecheck(data): #checks whether data contains trigger
-  pass
+  for word in data.split():
+    db.brain.find({str(word)})
 
 def trigger_response(trigger): #selects random response corresponding to trigger
   pass
